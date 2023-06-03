@@ -13,3 +13,41 @@
  *= require_tree .
  *= require_self
  */
+
+ .logo{
+  text-decoration: none;
+  color: rgba(0,0,0,.9);
+
+ }
+
+.flat-card{
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.flat-card-image{
+  height: 180px;
+  background-image: url(https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200);
+  background-size: cover;
+}
+
+.flat-show-container{
+  padding-top: 180px;
+}
+
+.bg-image{
+  width: 100vw;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-size: cover;
+}
+
+.map{
+  background-image: url("https://thumbs.dreamstime.com/b/baby-city-map-roads-transport-vector-illustration-inscribed-square-shape-cartoon-childish-hand-drawn-scandinavian-182442950.jpg");
+  display: block;
+  background-size: cover;
+  height: 300px;
+  width: 300px;
+}

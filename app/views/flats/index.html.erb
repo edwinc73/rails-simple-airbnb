@@ -1,0 +1,11 @@
+<div class="container pt-3">
+  <h1>All flats</h1>
+  <em><p>Showing <%= @flats.length %> flats</p></em>
+  <div class="row">
+      <% @flats.each do |flat| %>
+    <div class="col-4 pb-4">
+        <%= render "flat", flat: flat %>
+    </div>
+      <% end %>
+  </div>
+</div>

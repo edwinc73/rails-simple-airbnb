@@ -1,0 +1,14 @@
+<%= simple_form_for(flat) do |f|%>
+<div class="row d-flex justify-content-center">
+  <div class="col-6 bg-light rounded p-4">
+  <h2></h2>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :description %>
+    <%= f.input :picture_url %>
+    <%= f.input :price_per_night %>
+    <%= f.input :number_of_guests %>
+    <%= f.submit class:"btn btn-primary"%>
+  </div>
+</div>
+<% end %>

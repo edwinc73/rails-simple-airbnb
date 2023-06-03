@@ -1,0 +1,25 @@
+<div class=" flat-card">
+  <div class="flat-card-image"></div>
+  <div class="flat-card-info p-3 bg-light">
+    <h4><%= flat.name %></h4>
+    <p><%= flat.address %></p>
+    <div>
+    <span>
+      <i class="fa-solid fa-people-line"></i>
+      <%= flat.number_of_guests %>
+    </span>
+    <span>
+      <i class="fa-solid fa-euro-sign"></i>
+      <%= flat.price_per_night %>
+    </span>
+    </div>
+  </div>
+  <div class="flat-card-actions p-3">
+    <%= link_to "More info", flat_path(flat) %>
+    <%= link_to "Edit", edit_flat_path(flat) %>
+    <%= link_to "Remove",
+    flat_path(flat),
+    data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+  %>
+  </div>
+</div>
